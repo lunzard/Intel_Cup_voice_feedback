@@ -28,8 +28,10 @@ else:
         current_humidity = y["humidity"]
         z = x["weather"]
         weather_description = z[0]["description"]
-        weather_description = weather_description_table[weather_description]
-
+        try:
+            weather_description = weather_description_table[weather_description]
+        except:
+            weather_description = "There is " + weather_description
     
         # print following values
         # print(" Temperature (in kelvin unit) = " +
