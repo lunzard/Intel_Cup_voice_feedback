@@ -18,7 +18,7 @@ complete_url_sh = base_url + "appid=" + api_key + "&q=" + city_names[1]
 try:
     response = requests.get(complete_url_sg)
 except:
-    print("Sorry, please try a again after connect me to the internet")
+    print("Sorry, please try a again after connecting me to the internet")
 else:
     x = response.json()
     if x["cod"] != "404":
