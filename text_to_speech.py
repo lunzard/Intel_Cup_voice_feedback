@@ -12,7 +12,8 @@ voices = engine.getProperty('voices')
 for voice in voices:
     print(voice)
 
-engine.setProperty('voice', voices[2].id)
+engine.setProperty('voice', voices[1].id)
+engine.setProperty('rate', 150)
 
 while is_connected:
     text_input = input('Text to Convert: ')
