@@ -22,18 +22,20 @@ player.set_media_list(media_list)
 player.play()
 
 player.get_media_player().audio_set_volume(50)
+player.set_playback_mode(vlc.PlaybackMode.loop)
 
 is_playing = True
 while is_playing:
     volume = input("set Volume: ")
     # exit/stop
     if volume == '-1':
-        is_playing = False
+        # is_playing = False
         print('exiting...')
         break
     # pause
     elif volume == '-2':
         player.set_pause(1)
+        is_pause = False
     # resume/play
     elif volume == '-3':
         player.set_pause(0)
