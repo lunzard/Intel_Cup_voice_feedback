@@ -9,7 +9,7 @@ def format_playlist_address(address):
     return address
 
 
-address = "D:/NUS/project codes/Intel_Cup_voice_feedback/musiclist/*"
+address = "./musiclist/*"
 inst = vlc.Instance()
 player = inst.media_list_player_new()
 playlist = []
