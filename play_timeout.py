@@ -20,9 +20,9 @@ playlist = [address]
 media_list = inst.media_list_new(playlist)
 # media_list = inst.media_list_new(["D:/NUS/project codes/Intel_Cup_voice_feedback/musiclist/Lyn - Last Surprise.mp3"])
 player.set_media_list(media_list)
+player.get_media_player().audio_set_volume(100)
 player.play()
 time.sleep(1)
-player.get_media_player().audio_set_volume(50)
 # time.sleep(1)
 
 # is_playing = True
